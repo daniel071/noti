@@ -27,13 +27,21 @@ func main(){
 		firstArg := os.Args[1]
 		secondArg := os.Args[2]
 
-		fmt.Println("Hello", runtime.GOOS)
-
 		if runtime.GOOS == "linux" {
-			print("Sending message...")
 			app := "notify-send"
 			command := exec.Command(app, firstArg, secondArg)
 			command.Output()
+
+		} else if runtime.GOOS == "windows" {
+			print("Windows is NOT implemented yet!")
+			print("Perhaps you should use https://github.com/go-toast/toast")
+
+		} else if runtime.GOOS == "darwin" {
+			print("MacOS is not currently supported!")
+
+		} else {
+			fmt.Println("Your current operating system,", runtime.GOOS, ", is not supported.")
+
 
 		}
 
