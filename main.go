@@ -15,9 +15,10 @@ func main(){
 	if runtime.GOOS == "linux" {
 		print("Sending message...")
 		app := "notify-send"
-		arg1 := "'Test titel'"
+		arg1 := "'test title'"
 		arg2 := "'test message'"
-		exec.Command(app, arg1, arg2)
+		command := exec.Command(app, arg1, arg2)
+		command.Output()
 
 	}
 
