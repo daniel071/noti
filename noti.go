@@ -5,7 +5,7 @@ import "fmt"
 import "runtime"
 import "os/exec"
 import "os"
-import "gopkg.in/toast.v1"
+import "github.com/go-toast/toast"
 
 
 func print(text string) {
