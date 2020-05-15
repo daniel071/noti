@@ -14,7 +14,7 @@ func print(text string) {
 
 func help() {
 	fmt.Println(
-	"----- noti version 0.1.0 ----\n" + 
+	"----- noti version 0.1.0 ----\n" +
 	"noti - a simple notification library written in go.\n" +
 	"USAGE:\n" +
 	" noti [title] [message]",
@@ -34,8 +34,12 @@ func main(){
 			command.Output()
 
 		} else if runtime.GOOS == "windows" {
-			print("Windows is NOT implemented yet!")
-			print("Perhaps you should use https://github.com/go-toast/toast")
+			notification := toast.Notification{
+	        AppID: "Example App",
+	        Title: firstArg,
+	        Message: secondArg,
+			notification.Push()
+
 
 		} else if runtime.GOOS == "darwin" {
 			print("MacOS is not currently supported!")
