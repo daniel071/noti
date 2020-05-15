@@ -13,20 +13,20 @@ func print(text string) {
 
 
 func help() {
-	fmt.Println("""
-	noti - a simple notification library written in go.
-	USAGE:
-	 noti [title] [message]
-	""")
+	fmt.Println(
+	"noti - a simple notification library written in go.\n" +
+	"USAGE:\n" +
+	" noti [title] [message]",
+	)
 
 }
 
 
 func main(){
-	firstArg := os.Args[1]
-	secondArg := os.Args[2]
+	if len(os.Args) > 1 {
+		firstArg := os.Args[1]
+		secondArg := os.Args[2]
 
-	if len(os.Args) > 0 {
 		fmt.Println("Hello", runtime.GOOS)
 
 		if runtime.GOOS == "linux" {
