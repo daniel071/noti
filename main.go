@@ -4,6 +4,7 @@ package main
 import "fmt"
 import "runtime"
 import "os/exec"
+import "os"
 
 
 func print(text string){
@@ -11,14 +12,16 @@ func print(text string){
 }
 
 func main(){
+	firstArg := os.Args[1]
+	secondArg := os.Args[2]
+
 	fmt.Println("Hello", runtime.GOOS)
 	if runtime.GOOS == "linux" {
 		print("Sending message...")
 		app := "notify-send"
-		arg1 := "'test title'"
-		arg2 := "'test message'"
-		command := exec.Command(app, arg1, arg2)
+		command := exec.Command(app, firstArg, secondArg)
 		command.Output()
+
 
 	}
 
