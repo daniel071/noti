@@ -14,6 +14,7 @@ func print(text string) {
 
 func help() {
 	fmt.Println(
+	"----- noti version 0.1.0 ----\n" + 
 	"noti - a simple notification library written in go.\n" +
 	"USAGE:\n" +
 	" noti [title] [message]",
