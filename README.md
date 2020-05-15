@@ -15,5 +15,17 @@ on windows, type `.\noti.exe`
 
 ### Compiling it yourself:
 **(Experts only)**
-NOTE: This requires you to have go installed
-1. Clone this repository with `git clone `
+
+NOTE: This requires you to have Go installed
+1. Clone this repository with `git clone https://github.com/daniel071/noti.git`
+2. Run this with `go run noti.go` **OR** compile this with `go build noti.go`
+which will then create an executable.
+
+## Usage:
+Using noti is very simple, all you have to do is:
+
+`.\noti.exe title message` - If you are on Windows
+
+`./noti title message` - If you are on Linux
+
+Note: Replace "title" and "message" with your own text.
