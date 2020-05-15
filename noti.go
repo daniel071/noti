@@ -5,6 +5,7 @@ import "fmt"
 import "runtime"
 import "os/exec"
 import "os"
+import "gopkg.in/toast.v1"
 
 
 func print(text string) {
@@ -39,7 +40,7 @@ func main(){
 	        Title: firstArg,
 	        Message: secondArg,
 			}
-			
+
 			notification.Push()
 
 
