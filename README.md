@@ -5,6 +5,13 @@ A simple cross-platform notifier library.
 It uses the operating system's native notification system. For Windows, this
 is toast notifications, for Linux it uses `notify-send`
 
+Platform support:
+
+- [x] Linux
+- [x] Windows 8 and Windows 10
+- [x] MacOS 10.11 and higher
+
+
 ![A screenshot of noti on the GNOME desktop](https://raw.githubusercontent.com/daniel071/noti/master/Screenshots/notiExample.png)
 
 ## Installation

@@ -34,10 +34,12 @@ func main(){
 			command.Output()
 
 		} else if runtime.GOOS == "windows" {
-			notification := toast.Notification{
+			notification := toast.Notification {
 	        AppID: "Example App",
 	        Title: firstArg,
 	        Message: secondArg,
+			}
+			
 			notification.Push()
 
 
