@@ -9,8 +9,7 @@ Platform support:
 
 - [x] Linux
 - [x] Windows 8 and Windows 10
-- [ ] MacOS 10.11 and higher
-I'm still working on getting macos support.
+- [ ] MacOS 10.11 and higher - I'm still working on getting macos support.
 
 
 ![A screenshot of noti on the GNOME desktop](https://raw.githubusercontent.com/daniel071/noti/master/Screenshots/notiExample.png)
