@@ -35,6 +35,6 @@ Using noti is very simple, all you have to do is:
 
 `.\noti.exe title message` - If you are on Windows
 
-`./noti title message` - If you are on Linux
+`./noti title message` - If you are on Linux or macOS
 
 Note: Replace "title" and "message" with your own text.
